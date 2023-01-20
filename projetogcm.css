@@ -1,0 +1,512 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body {
+    color: rgb(218, 212, 212);
+    background-color: rgb(247, 247, 247);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.img {
+    display: flex;
+    width: 210px;
+    height: 200px;
+    margin-top: 0px;
+    
+}
+
+
+
+.center {
+    background: no-repeat center/cover url("img/gcmfarda.jpg");
+    height: calc(96vh - 700px);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+
+.menu {
+    
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    font-family: 'Arial';
+}
+    
+.menu ul{
+    list-style: none;
+    position: relative;
+
+}
+
+.menu ul li{
+    width: 180px;
+    float: left;
+
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+label[for="chec"]{
+    padding: 5px;
+    background-color: #222;
+    color: white;
+    font-family: 'Arial';
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+#chec {
+    display: none;
+}
+
+
+.galeria {
+    
+    margin: 80px auto;
+    width: 160vh;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+
+    50%{
+        opacity: 0;
+    }
+}
+
+.foto:nth-child(1){
+
+}
+.foto:nth-child(2){
+    animation-delay: 5s;
+    
+}
+.foto:nth-child(3){
+    animation-delay: 10s;
+    
+}
+.foto:nth-child(4){
+    animation-delay: 15s;
+    
+}
+
+.acao {
+    margin: 20px;
+    color: rgb(253, 244, 244);
+    margin-left: 20px;
+    background-color: #555;
+    padding: 2px;
+    text-align: center;
+    font-size: 16pt;
+    
+
+}
+
+.acao::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    display: block;
+}
+
+.main {
+    display: flex;
+    
+
+}
+
+.art1 {
+    width: 550px;
+    height: 350px;
+    border: 1px solid grey;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+#art11 {
+    background: url('../Guarda\ ambiental\ de\ sao\ bernar\ interrompe\ dematamento.jpg') center center no-repeat;
+}
+
+.descricao {
+    width: 500px;
+    margin: auto;
+    margin-top: 280px;
+    padding:  6px;
+    color: whitesmoke;
+    font-size: large;
+    
+}
+
+.asidea {
+    color: white;
+    text-decoration: none;
+}
+
+.art2 {
+    width: 550px;
+    height: 350px;
+    border: 1px solid grey;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+#art22 {
+    background: url('../gcm\ lacra\ estabelecimento.jpg') center center no-repeat;
+}
+
+.descricao2 {
+    width: 500px;
+    margin: auto;
+    margin-top: 280px;
+    padding:  6px;
+    color: whitesmoke;
+    font-size: large;
+}
+
+.asidea {
+    color: white;
+}
+
+.art3 {
+    width: 550px;
+    height: 350px;
+    border: 1px solid grey;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+#art33 {
+    background: url('../romu.jpg') center center no-repeat;
+}
+
+.descricao3 {
+    width: 500px;
+    margin: auto;
+    margin-top: 280px;
+    padding:  6px;
+    color: whitesmoke;
+    font-size: large;
+}
+
+.asidea {
+    color: white;
+}
+
+.h3 {
+    margin: 20px;
+    background-color: #555;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+.footer {
+    color: black;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
+}
+
+.footer address {
+    margin: 10px;
+    
+}
+
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: gray;
+    
+
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 8px;
+    opacity: 0.75;
+    margin-top: 10px;
+
+}
+
+.footer .social a:hover {
+    opacity: 0.9;
+}
+
+.footer .social .face {
+    color: blue;
+}
+
+.footer .social .twi {
+    color: blue;
+}
+
+.footer .social .insta {
+    color: rgba(192, 15, 98, 0.747);
+}
+
+
+@media screen and (max-width: 600px), (max-width: 1024px) {
+    .galeria {
+        width: 100%;
+        display: flex;
+        width: 40vh;
+        height: 28vh;
+        margin-top: 90px;
+        align-items: center;
+        
+        
+    }
+
+    .img {
+        display: flex;
+        width: 100px;
+        height: 90px;
+
+        
+    }
+
+    .center{
+        display: flex;
+        width: 100%;
+        height: 90px;
+        
+    }
+
+    .menu {
+    
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+        font-family: 'Arial';
+        font-size: 8pt;
+        float: none;
+       
+        
+    }
+        
+    .menu ul{
+        list-style: none;
+        position: relative;
+        text-align: center;
+    
+    }
+
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-width: 10;
+        transition: all .4s;
+        visibility: visible;
+        
+        
+        
+    }
+    
+    .menu ul li{
+        width: 100%;
+        float: none;
+    
+    }
+    
+    .menu a {
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background-color: #222;
+        color: white;
+        border-bottom: 1px solid rgb(150, 146, 146);
+        
+    }
+    
+    .menu ul li {
+        position: static;
+        overflow: hidden;
+        max-width: 10;
+        transition: all .4s;
+        
+        
+
+    }
+    
+    .menu ul li  :hover ul{
+        height: auto;
+        max-width: 200px;
+    }
+    
+    .menu a :hover {
+        background-color: #f4f4f4;
+        color: #555;
+    }
+    
+    .menu ul ul li {
+        float: none;
+        border-bottom: solid 1px #ccc;
+    }
+
+    .acao {
+        margin: 10px;
+        color: #222;
+        align-items: center;
+        
+
+    }
+    .main {
+        display: block;
+        width: 100%;
+
+        }
+
+    .art1 {
+        width: 100%;
+        width: 40vh;
+        height: 28vh;
+        border: 1px solid grey;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .descricao {
+        width: 350px;
+        margin: auto;
+        margin-top: 180px;
+        padding:  6px;
+        color: whitesmoke;
+        font-size: large;
+        
+    }
+
+    .art2 {
+        width: 100%;
+        width: 40vh;
+        height: 28vh;
+        border: 1px solid grey;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        
+
+    }
+
+    .descricao2 {
+        width: 350px;
+        margin: auto;
+        margin-top: 180px;
+        padding:  6px;
+        color: whitesmoke;
+        font-size: large;
+
+    }
+
+    .art3 {
+        width: 100%;
+        width: 40vh;
+        height: 28vh;
+        border: 1px solid grey;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        
+
+    }
+
+    .descricao3 {
+        width: 350px;
+        margin: auto;
+        margin-top: 180px;
+        padding:  6px;
+        color: whitesmoke;
+        font-size: large;
+
+    }
+
+    
+    
+}
+
+
+
+    
+    
+ 
+
+
+
+
+  
+
+
+    
+
+        
+    
